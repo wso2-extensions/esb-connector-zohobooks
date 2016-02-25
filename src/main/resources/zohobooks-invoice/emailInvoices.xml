@@ -39,8 +39,8 @@
            above. -->
         <script language="js">
             <![CDATA[
-			var jsonString = mc.getProperty('uri.var.jsonString');
-			mc.setProperty('uri.var.jsonString', jsonString);
+            var jsonString = mc.getProperty('uri.var.jsonString');
+            mc.setProperty('uri.var.jsonString', jsonString);
          
             var invoiceIds=mc.getProperty('uri.var.invoiceIds');
             mc.setProperty('uri.var.invoiceIds', invoiceIds);

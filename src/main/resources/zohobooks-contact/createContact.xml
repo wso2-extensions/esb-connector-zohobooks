@@ -112,7 +112,7 @@
             var website = mc.getProperty('uri.var.website');
             var authToken = mc.getProperty('uri.var.authToken');
             var organizationId = mc.getProperty('uri.var.organizationId');
-			var paymentTerms = mc.getProperty('uri.var.paymentTerms');
+            var paymentTerms = mc.getProperty('uri.var.paymentTerms');
             var paymentTermsLabel = mc.getProperty('uri.var.paymentTermsLabel');
             var currencyId = mc.getProperty('uri.var.currencyId');
             
@@ -198,8 +198,8 @@
             if (website != null && website != ""){
                jsonPayload["website"] = website;
             }
-			
-			if (paymentTerms != null && paymentTerms != ""){
+
+            if (paymentTerms != null && paymentTerms != ""){
                jsonPayload["payment_terms"] = paymentTerms;
             }
             
@@ -220,11 +220,11 @@
            above. -->
         <script language="js">
             <![CDATA[
-			var jsonString = mc.getProperty('uri.var.jsonString');
-			var urlQuery = mc.getProperty('uri.var.urlQuery');
-			
-			urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
-			mc.setProperty('uri.var.urlQuery', urlQuery);
+            var jsonString = mc.getProperty('uri.var.jsonString');
+            var urlQuery = mc.getProperty('uri.var.urlQuery');
+
+            urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
+            mc.setProperty('uri.var.urlQuery', urlQuery);
          ]]>
         </script>
         <call>

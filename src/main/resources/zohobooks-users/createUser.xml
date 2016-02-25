@@ -47,7 +47,7 @@
             var authToken = mc.getProperty('uri.var.authToken');
             var organizationId = mc.getProperty('uri.var.organizationId');
             var urlQuery = '?authtoken=' + authToken + '&organization_id=' + organizationId+'&JSONString=' + encodeURIComponent(jsonString);
-           	mc.setProperty('uri.var.urlQuery', urlQuery);
+            mc.setProperty('uri.var.urlQuery', urlQuery);
          ]]>
         </script>
         <call>

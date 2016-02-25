@@ -72,7 +72,7 @@
             if (logTime != null && logTime != ""){
                jsonPayload["log_time"] = logTime;
             }
-			if (beginTime != null && beginTime != ""){
+            if (beginTime != null && beginTime != ""){
                jsonPayload["begin_time"] = beginTime;
             }
             if (endTime != null && endTime != ""){
@@ -81,7 +81,7 @@
             if (isBillable != null && isBillable != ""){
                jsonPayload["is_billable"] = isBillable;
             }
-			if (notes != null && notes != ""){
+            if (notes != null && notes != ""){
                jsonPayload["notes"] = notes;
             }
             if (startTimer != null && startTimer != ""){
@@ -96,10 +96,10 @@
            above. -->
         <script language="js">
             <![CDATA[
-			var jsonString = mc.getProperty('uri.var.jsonString');
-			var urlQuery = mc.getProperty('uri.var.urlQuery');
-			urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
-			mc.setProperty('uri.var.urlQuery', urlQuery);
+            var jsonString = mc.getProperty('uri.var.jsonString');
+            var urlQuery = mc.getProperty('uri.var.urlQuery');
+            urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
+            mc.setProperty('uri.var.urlQuery', urlQuery);
          ]]>
         </script>
         <call>

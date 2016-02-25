@@ -130,13 +130,13 @@
             if (templateId != null && templateId != ""){
                jsonPayload["template_id"] = templateId;
             }
-			if (date != null && date != ""){
+            if (date != null && date != ""){
                jsonPayload["date"] = date;
             }
-			if (dueDate != null && dueDate != ""){
+            if (dueDate != null && dueDate != ""){
                jsonPayload["due_date"] = dueDate;
             }
-			if (exchangeRate != null && exchangeRate != ""){
+            if (exchangeRate != null && exchangeRate != ""){
                jsonPayload["exchange_rate"] = exchangeRate;
             }
             if (customFields != null && customFields != ""){
@@ -160,7 +160,7 @@
             if (lineItems != null && lineItems != ""){
                jsonPayload["line_items"] = eval("(" + lineItems + ")");
             }
-			if (term != null && term != ""){
+            if (term != null && term != ""){
                jsonPayload["terms"] = term;
             }
             if (termDefault != null && termDefault != ""){
@@ -181,11 +181,11 @@
            above. -->
         <script language="js">
             <![CDATA[
-			var jsonString = mc.getProperty('uri.var.jsonString');
-			var urlQuery = mc.getProperty('uri.var.urlQuery');
-			
-			urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
-			mc.setProperty('uri.var.urlQuery', urlQuery);
+            var jsonString = mc.getProperty('uri.var.jsonString');
+            var urlQuery = mc.getProperty('uri.var.urlQuery');
+
+            urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
+            mc.setProperty('uri.var.urlQuery', urlQuery);
          ]]>
         </script>
         <call>

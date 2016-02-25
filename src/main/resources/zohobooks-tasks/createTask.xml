@@ -67,10 +67,10 @@
            above. -->
         <script language="js">
             <![CDATA[
-			var jsonString = mc.getProperty('uri.var.jsonString');
-			var urlQuery = mc.getProperty('uri.var.urlQuery');
-			urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
-			mc.setProperty('uri.var.urlQuery', urlQuery);
+            var jsonString = mc.getProperty('uri.var.jsonString');
+            var urlQuery = mc.getProperty('uri.var.urlQuery');
+            urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
+            mc.setProperty('uri.var.urlQuery', urlQuery);
          ]]>
         </script>
         <call>

@@ -45,7 +45,7 @@
             var toDate = mc.getProperty('uri.var.toDate');
             var filterBy = mc.getProperty('uri.var.filterBy');
             var projectId = mc.getProperty('uri.var.projectId');
-			var userId = mc.getProperty('uri.var.userId');
+            var userId = mc.getProperty('uri.var.userId');
             var sortColumn = mc.getProperty('uri.var.sortColumn');
             var page = mc.getProperty('uri.var.page');
             var perPage = mc.getProperty('uri.var.perPage');
@@ -64,13 +64,13 @@
             if (projectId != null && projectId != ""){
                urlQuery += 'project_id=' + projectId + '&';
             }
-			if (sortColumn != null && sortColumn != ""){
+            if (sortColumn != null && sortColumn != ""){
                urlQuery += 'sort_column=' + sortColumn + '&';
             }
             if (userId != null && userId != ""){
                urlQuery += 'user_id=' + userId + '&';
             }
-			if (page != null && page != ""){
+            if (page != null && page != ""){
                urlQuery += 'page=' + page + '&';
             }
             if (perPage != null && perPage != ""){

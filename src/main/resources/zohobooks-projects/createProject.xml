@@ -74,7 +74,7 @@
             if (rate != null && rate != ""){
                jsonPayload["rate"] = rate;
             }
-			if (budgetType != null && budgetType != ""){
+            if (budgetType != null && budgetType != ""){
                jsonPayload["budget_type"] = budgetType;
             }
             if (budgetHours != null && budgetHours != ""){
@@ -83,7 +83,7 @@
             if (budgetAmount != null && budgetAmount != ""){
                jsonPayload["budget_amount"] = budgetAmount;
             }
-			if (users != null && users != ""){
+            if (users != null && users != ""){
                jsonPayload["users"] = eval("(" + users + ")");
             }
             if (tasks != null && tasks != ""){
@@ -98,10 +98,10 @@
            above. -->
         <script language="js">
             <![CDATA[
-			var jsonString = mc.getProperty('uri.var.jsonString');
-			var urlQuery = mc.getProperty('uri.var.urlQuery');
-			urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
-			mc.setProperty('uri.var.urlQuery', urlQuery);
+            var jsonString = mc.getProperty('uri.var.jsonString');
+            var urlQuery = mc.getProperty('uri.var.urlQuery');
+            urlQuery += '&JSONString=' + encodeURIComponent(jsonString);
+            mc.setProperty('uri.var.urlQuery', urlQuery);
          ]]>
         </script>
         <call>

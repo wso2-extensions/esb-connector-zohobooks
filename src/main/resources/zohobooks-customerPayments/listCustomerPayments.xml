@@ -95,27 +95,27 @@
             var authToken = mc.getProperty('uri.var.authToken');
             var organizationId = mc.getProperty('uri.var.organizationId');
             var customerName = mc.getProperty('uri.var.customerName');
-			var customerNameStartswith = mc.getProperty('uri.var.customerNameStartswith');
-			var customerNameContains = mc.getProperty('uri.var.customerNameContains');
+            var customerNameStartswith = mc.getProperty('uri.var.customerNameStartswith');
+            var customerNameContains = mc.getProperty('uri.var.customerNameContains');
             var referenceNumber = mc.getProperty('uri.var.referenceNumber');
-			var referenceNumberStartswith = mc.getProperty('uri.var.referenceNumberStartswith');
-			var referenceNumberContains = mc.getProperty('uri.var.referenceNumberContains');
+            var referenceNumberStartswith = mc.getProperty('uri.var.referenceNumberStartswith');
+            var referenceNumberContains = mc.getProperty('uri.var.referenceNumberContains');
             var date = mc.getProperty('uri.var.date');
-			var dateStart = mc.getProperty('uri.var.dateStart');
-			var dateEnd = mc.getProperty('uri.var.dateEnd');
-			var dateBefore = mc.getProperty('uri.var.dateBefore');
-			var dateAfter = mc.getProperty('uri.var.dateAfter');
+            var dateStart = mc.getProperty('uri.var.dateStart');
+            var dateEnd = mc.getProperty('uri.var.dateEnd');
+            var dateBefore = mc.getProperty('uri.var.dateBefore');
+            var dateAfter = mc.getProperty('uri.var.dateAfter');
             var amount = mc.getProperty('uri.var.amount');
-			var amountLessThan = mc.getProperty('uri.var.amountLessThan');
-			var amountLessEqual = mc.getProperty('uri.var.amountLessEqual');
-			var amountGreaterThan = mc.getProperty('uri.var.amountGreaterThan');
-			var amountGreaterEqual = mc.getProperty('uri.var.amountGreaterEqual');
+            var amountLessThan = mc.getProperty('uri.var.amountLessThan');
+            var amountLessEqual = mc.getProperty('uri.var.amountLessEqual');
+            var amountGreaterThan = mc.getProperty('uri.var.amountGreaterThan');
+            var amountGreaterEqual = mc.getProperty('uri.var.amountGreaterEqual');
             var paymentMode = mc.getProperty('uri.var.paymentMode');
-			var paymentModeStartsWith = mc.getProperty('uri.var.paymentModeStartsWith');
-			var paymentModeContains = mc.getProperty('uri.var.paymentModeContains');
+            var paymentModeStartsWith = mc.getProperty('uri.var.paymentModeStartsWith');
+            var paymentModeContains = mc.getProperty('uri.var.paymentModeContains');
             var notes = mc.getProperty('uri.var.notes');
-			var notesStartsWith = mc.getProperty('uri.var.notesStartsWith');
-			var notesContains = mc.getProperty('uri.var.notesContains');
+            var notesStartsWith = mc.getProperty('uri.var.notesStartsWith');
+            var notesContains = mc.getProperty('uri.var.notesContains');
             var customerId = mc.getProperty('uri.var.customerId');
             var filterby = mc.getProperty('uri.var.filterBy');
             var searchText = mc.getProperty('uri.var.searchText');
@@ -125,67 +125,67 @@
             if (customerName != null && customerName != ""){
                urlQuery += 'customer_name=' + customerName + '&';
             }
-			if (customerNameStartswith != null && customerNameStartswith != ""){
+            if (customerNameStartswith != null && customerNameStartswith != ""){
                urlQuery += 'customer_name_startswith=' + customerNameStartswith + '&';
             }
-			if (customerNameContains != null && customerNameContains != ""){
+            if (customerNameContains != null && customerNameContains != ""){
                urlQuery += 'customer_name_contains=' + customerNameContains + '&';
             }
             if (referenceNumber != null && referenceNumber != ""){
                urlQuery += 'reference_number=' + referenceNumber + '&';
             }
-			if (referenceNumberStartswith != null && referenceNumberStartswith != ""){
+            if (referenceNumberStartswith != null && referenceNumberStartswith != ""){
                urlQuery += 'reference_number_startswith=' + referenceNumberStartswith + '&';
             }
-			if (referenceNumberContains != null && referenceNumberContains != ""){
+            if (referenceNumberContains != null && referenceNumberContains != ""){
                urlQuery += 'reference_number_contains=' + referenceNumberContains + '&';
             }
             if (date != null && date != ""){
                urlQuery += 'date=' + date + '&';
             }
-			if (dateStart != null && dateStart != ""){
+            if (dateStart != null && dateStart != ""){
                urlQuery += 'date_start=' + dateStart + '&';
             }
-			if (dateEnd != null && dateEnd != ""){
+            if (dateEnd != null && dateEnd != ""){
                urlQuery += 'date_end=' + dateEnd + '&';
             }
-			if (dateAfter != null && dateAfter != ""){
+            if (dateAfter != null && dateAfter != ""){
                urlQuery += 'date_after=' + dateAfter + '&';
             }
-			if (dateBefore != null && dateBefore != ""){
+            if (dateBefore != null && dateBefore != ""){
                urlQuery += 'date_before=' + dateBefore + '&';
             }
             if (amount != null && amount != ""){
                urlQuery += 'amount=' + amount + '&';
             }
-			if (amountLessThan != null && amountLessThan != ""){
+            if (amountLessThan != null && amountLessThan != ""){
                urlQuery += 'amount_less_than=' + amountLessThan + '&';
             }
-			if (amountLessEqual != null && amountLessEqual != ""){
+            if (amountLessEqual != null && amountLessEqual != ""){
                urlQuery += 'amount_less_equals=' + amountLessEqual + '&';
             }
-			if (amountGreaterThan != null && amountGreaterThan != ""){
+            if (amountGreaterThan != null && amountGreaterThan != ""){
                urlQuery += 'amount_greater_than=' + amountGreaterThan + '&';
             }
-			if (amountGreaterEqual != null && amountGreaterEqual != ""){
+            if (amountGreaterEqual != null && amountGreaterEqual != ""){
                urlQuery += 'amount_greater_equals=' + amountGreaterEqual + '&';
             }
             if (paymentMode != null && paymentMode != ""){
                urlQuery += 'payment_mode=' + paymentMode + '&';
             }
-			if (paymentModeStartsWith != null && paymentModeStartsWith != ""){
+            if (paymentModeStartsWith != null && paymentModeStartsWith != ""){
                urlQuery += 'payment_mode_startswith=' + paymentModeStartsWith + '&';
             }
-			if (paymentModeContains != null && paymentModeContains != ""){
+            if (paymentModeContains != null && paymentModeContains != ""){
                urlQuery += 'payment_mode_contains=' + paymentModeContains + '&';
             }
             if (notes != null && notes != ""){
                urlQuery += 'notes=' + notes + '&';
             }
-			if (notesStartsWith  != null && notesStartsWith  != ""){
+            if (notesStartsWith  != null && notesStartsWith  != ""){
                urlQuery += 'notes_startswith=' + notesStartsWith  + '&';
             }
-			if (notesContains != null && notesContains != ""){
+            if (notesContains != null && notesContains != ""){
                urlQuery += 'notes_contains=' + notesContains + '&';
             }
             if (customerId != null && customerId != ""){
