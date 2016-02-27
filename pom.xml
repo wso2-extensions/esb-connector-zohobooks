@@ -22,13 +22,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.carbon.connector</groupId>
     <artifactId>org.wso2.carbon.connector.${connector.name}</artifactId>
-    <version>${connector.version}</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>WSO2 Carbon - Mediation Library Connector For ${connector.name}</name>
     <url>http://wso2.org</url>
     <properties>
         <connector.name>zohobooks</connector.name>
-        <connector.version>1.0.1-SNAPSHOT</connector.version>
         <esb.version>4.9.0</esb.version>
         <test.framework.version>4.2.0</test.framework.version>
         <carbon.kernel.version>4.4.1</carbon.kernel.version>
@@ -89,7 +88,8 @@
     <scm>
         <connection>scm:git:https://github.com/hmrajas/esb-connector-zohobooks.git</connection>
         <url>https://github.com/hmrajas/esb-connector-zohobooks.git</url>
-        <developerConnection>scm:git:https://github.com/wso2-extensions/esb-connector-zohobooks</developerConnection>
+        <developerConnection>scm:git:https://github.com/wso2-extensions/esb-connector-zohobooks
+        </developerConnection>
         <tag>HEAD</tag>
     </scm>
     <build>
@@ -139,7 +139,7 @@
                             <goal>attached</goal>
                         </goals>
                         <configuration>
-                            <finalName>${connector.name}-connector-${connector.version}</finalName>
+                            <finalName>${connector.name}-connector-${version}</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
                             <filters>
                                 <filter>${basedir}/src/main/assembly/filter.properties</filter>
