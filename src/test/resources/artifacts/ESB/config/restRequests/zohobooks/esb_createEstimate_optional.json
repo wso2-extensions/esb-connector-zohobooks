@@ -3,9 +3,9 @@
   "authToken": "%s(authToken)",
   "organizationId": "%s(organizationId)",
   "contactPersons": [
-    "%s(contactPersonId)"
+    "%s(contactId)"
   ],
-  "customerId": "%s(contactIdOptional)",
+  "customerId": "%s(customerId)",
   "lineItems": [
     {
       "item_id": "%s(itemIdMandatory)"

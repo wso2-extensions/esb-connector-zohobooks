@@ -3,9 +3,9 @@
   "authToken": "%s(authToken)",
   "organizationId": "%s(organizationId)",
   "contactPersons": [
-    "%s(contactPersonId)"
+    "%s(contactId)"
   ],
-  "customerId": "%s(contactIdOptional)",
+  "customerId": "%s(customerId)",
   "dueDate": "%s(invoiceDueDate)",
   "invoiceNumber": "%s(invoiceNumber)",
   "lineItems": [

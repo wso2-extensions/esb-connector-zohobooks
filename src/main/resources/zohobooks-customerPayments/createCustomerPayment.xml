@@ -75,7 +75,7 @@
             var contactPersons = mc.getProperty('uri.var.contactPersons');
             var urlQuery = '?authtoken=' + authToken + '&organization_id=' + organizationId + '&';
             // Remove the trailing '&'
-            urlQuery = urlQuery.substring(0, urlQuery.length - 1);
+            urlQuery = urlQuery.toString().substring(0, urlQuery.toString().lastIndexOf("&"));
             mc.setProperty('uri.var.urlQuery', urlQuery);
             if (customerId != null && customerId != ""){
                jsonPayload["customer_id"] = customerId;
