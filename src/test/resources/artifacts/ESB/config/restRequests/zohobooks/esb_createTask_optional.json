@@ -5,10 +5,5 @@
   "projectId": "%s(projectId)",
   "taskName": "%s(taskNameOpt)",
   "description": "%s(taskDescription)",
-  "rate":
-  %
-  s
-  (
-  taskRate
-  )
+  "rate": %s(taskRate)
 }

@@ -4,6 +4,7 @@
   "organizationId": "%s(organizationId)",
   "companyName": "%s(companyName)",
   "contactName": "%s(contactNameOptional)",
+  "contactType":"%s(contactType)",
   "contactPersons": [
     {
       "first_name": "%s(contactPersonFirstName)",

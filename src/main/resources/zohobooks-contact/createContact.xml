@@ -18,6 +18,8 @@
 -->
 <template name="createContact" xmlns="http://ws.apache.org/ns/synapse">
     <!-- API Documentation URL - https://www.zoho.com/books/api/v3/contacts/#create-a-contact -->
+    <parameter name="contactType"
+               description="The type of the contact. It can be vendor or customer."/>
     <parameter name="vatRegNo"
                description="VAT Registration number of a contact with VAT treatment as eu_vat_registered."/>
     <parameter name="countryCode"
@@ -54,6 +56,7 @@
     <parameter name="currencyId" description="Currency Id of a contact."/>
     <parameter name="notes" description="Notes to be added to the Contact."/>
     <sequence>
+        <property name="uri.var.contactType" expression="$func:contactType"/>
         <property name="uri.var.vatRegNo" expression="$func:vatRegNo"/>
         <property name="uri.var.countryCode" expression="$func:countryCode"/>
         <property name="uri.var.avataxUseCode" expression="$func:avataxUseCode"/>
@@ -90,6 +93,7 @@
             <![CDATA[
             var jsonPayload = mc.getPayloadJSON();
             
+            var contactType = mc.getProperty('uri.var.contactType');
             var avataxExemptNo = mc.getProperty('uri.var.avataxExemptNo');
             var avataxUseCode = mc.getProperty('uri.var.avataxUseCode');
             var billingAddress = mc.getProperty('uri.var.billingAddress');
@@ -118,7 +122,11 @@
             
             var urlQuery = '?authtoken=' + authToken + '&organization_id=' + organizationId;
             mc.setProperty('uri.var.urlQuery', urlQuery);
-            
+
+            if (contactType != null && contactType != ""){
+               jsonPayload["contact_type"] = contactType;
+            }
+
             if (avataxExemptNo != null && avataxExemptNo != ""){
                jsonPayload["avatax_exempt_no"] = avataxExemptNo;
             }

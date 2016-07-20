@@ -2,10 +2,7 @@
   "apiUrl": "%s(apiUrl)",
   "authToken": "%s(authToken)",
   "organizationId": "%s(organizationId)",
-  "projectId": "%s(projectId)",
-  "users": [
-    {
-      "user_id": "%s(taskUserId)"
-    }
-  ]
+  "perPage": "1",
+  "sortColumn": "name",
+  "page": "2"
 }

@@ -107,8 +107,7 @@
         <property name="uri.var.avataxExemptNo" expression="$func:avataxExemptNo"/>
         <property name="uri.var.vatTreatment" expression="$func:vatTreatment"/>
         <property name="uri.var.send" expression="$func:send"/>
-        <property name="uri.var.ignoreAutoNumberGeneration"
-                  expression="$func:ignoreAutoNumberGeneration"/>
+        <property name="uri.var.ignoreAutoNumberGeneration" expression="$func:ignoreAutoNumberGeneration"/>
         <payloadFactory media-type="json">
             <format>
                 {"customer_id": "$1"}
@@ -170,7 +169,7 @@
             }
             
             // Remove the trailing '&'
-            urlQuery = urlQuery.substring(0, urlQuery.length - 1);
+            urlQuery = urlQuery.toString().substring(0, urlQuery.toString().lastIndexOf("&"));
             mc.setProperty('uri.var.urlQuery', urlQuery);
             
             if (adjustment != null && adjustment != ""){
