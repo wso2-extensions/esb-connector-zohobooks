@@ -45,7 +45,7 @@ public class ZohoBooksConnectorIntegrationTest extends ConnectorIntegrationTestB
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("zohobooks-connector-1.0.2");
+        init("zohobooks-connector-1.0.3-SNAPSHOT");
 
         esbRequestHeadersMap.put("Accept-Charset", "UTF-8");
         esbRequestHeadersMap.put("Content-Type", "application/json");
