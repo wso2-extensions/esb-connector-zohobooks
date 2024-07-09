@@ -4,7 +4,7 @@
     "category": "Billing and Accounting",
     "documentationUrl": "https://docs.wso2.com/display/ESBCONNECTORS/Zoho+Books+Connector",
     "description": "The Zoho Books connector allows you to access the Zoho Books REST API through the WSO2 ESB. The Zoho Books API gives you programmatic access to the Zoho Books service, allowing you to expand and build on the Zoho Books platform for small businesses across the globe. ",
-    "status": "Unsupported",
+    "status": "Active",
     "labels": [
         "connector"
     ],
